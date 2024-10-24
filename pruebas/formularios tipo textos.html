@@ -1,0 +1,113 @@
+<html lang="es-ES">
+    <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <form>
+            <p> Introduce tu nombre de usuario</p>
+            <input>
+            <!--Etiqueta <input> para recibir los datos-->
+            <!--https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input#Atributos-->
+            <p> Introduce contraseña:</p>
+            <input>
+            <p> Introduce un comentario:</p>
+            <input>
+            <p> Adjunta un fichero</p>
+            <input>
+        </form>
+        <form>
+            <p> Introduce tu nombre de usuario</p>
+            <input type="text">
+            <!--Etiqueta <input> para recibir los datos-->
+            <!--https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input#Atributos-->
+            <p> Introduce contraseña:</p>
+            <input type="password">
+            <p> Introduce un email:</p>
+            <input type="email">
+            <p> Adjunta un fichero</p>
+            <input type="file">
+        </form>
+        <hr/>
+        <hr/>
+        <form>
+            <p>Selecciona un producto:</p>
+            <label>
+                <!--Tipo radio para botón de opciones-->
+                <input type="radio" name="producto" value="Aguacate">
+                El aguacate de Axarquía 
+            </label>
+            <br>
+            <!--La etiqueta label define la etiqueta descriptiva para input-->
+            <label>
+                <input type="radio" name="producto" value="Platano">
+                El platano de Canarias 
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="producto" value="Chirimolla">
+                La chirimolla de Motril 
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="producto" value="Longan">
+                El longan del sur de China 
+            </label>
+            <br>
+        </form>
+        <hr/>
+        <hr/>
+        <form>
+            <p>Indica el que más te guste:</p>
+            <label>
+                <!--Tipo checkbox para casilla de verificación-->
+                <input type="checkbox" name="producto" value="Aguacate">
+                El aguacate de Santa Lucía 
+            </label>
+            <br>
+            <!--La etiqueta label define la etiqueta descriptiva para input-->
+            <label>
+                <input type="checkbox" name="producto" value="Platano">
+                El platano de Bañaderos 
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="producto" value="Chirimolla">
+                La chirimolla de Teror
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="producto" value="Longan">
+                El longan del sur de Tenerife 
+            </label>
+            <br>
+        </form>
+        <hr/>
+        <hr/>
+        <form>
+            <label>
+                Escoja una fruta:
+                <select>
+                    <option name="producto">Aguacate</option>
+                    <option name="producto">Plátano</option>
+                    <option name="producto">Chirimolla</option>
+                    <option name="producto">Longan</option>
+                </select>
+            </label>
+            <hr/>
+            <hr/>
+            <label>
+                <!--Input tipo submit para enviar los datosenvío-->
+                Enviar formulario <input type="submit">
+            </label>
+            <br/>
+            <label>       
+                <!--Input tipo reset para eliminar la selección-->
+                Reiniciar formulario <input type="reset">
+            </label>
+        </form>
+        <hr/>
+        <hr/>
+    </body>    
+</html>
