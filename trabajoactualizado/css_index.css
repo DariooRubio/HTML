@@ -1,29 +1,110 @@
-table, th, td{
-    border-collapse: collapse; 
-    text-align: center; 
-    margin-left: auto; 
-    margin-right: auto;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* Estilos generales */
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Apilar elementos en columna */
+    min-height: 100vh;  /* Asegurar que el body ocupe al menos la altura de la pantalla */
     text-align: center;
 }
 
-a{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h1, h2, h3 {
+    color: #000000;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #a81c30;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+
+    padding: 10px;
+    background-color:#ffe9ba;
+    box-sizing: border-box;
+}
+
+/* Estilos para section */
+section {
+
+    background-color: #ffe9ba;
+    padding: 50px;
+}
+
+
+/* Estilos para el artículo */
+article {
+    background-color: #fdfdfd;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+
+/* Estilos para figure y figcaption */
+figure {
+    text-align: center;
+    margin: 0px;
+   
+}
+
+figure img {
+    max-width: 60%;
+    padding: 0% 20% 0% 20%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+p{
+   font-size: 0.9em;
+   padding: 0% 20% 0% 20%;
+}
+
+/* Estilos para el pie de página */
+footer {
+    font-size: small;
+    background-color:#a81c30;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Estilo del párrafo demo para mostrar la hora más pequeña*/
+#fecha {
+    font-size: 75%;
+}
+
+#descripcion {
+    font-family: sans-serif;
     color:rgb(255, 255, 255);
     margin-left: auto; 
     margin-right: auto;
-}
-
-#arriba{
-    text-align: center; 
-    margin-left: auto; 
-    margin-right: auto;
-    margin-top: 0px;
-    background-color: rgb(95, 84, 84);
-
+    text-decoration: none;
 }

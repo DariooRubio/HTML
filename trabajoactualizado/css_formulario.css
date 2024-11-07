@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Apilar elementos en columna */
+    min-height: 100vh;  /* Asegurar que el body ocupe al menos la altura de la pantalla */
+    text-align: center;
+}
+section {
+    float: center;
+   
+}
+table{
+    background:linear-gradient(to bottom, rgba(154,150,150,0.6383930281096813) 0%, rgba(112,112,112,0.8372725799304097) 48%, rgba(0,0,0,0.8148636163449755) 100%);
+    border-radius:30px 30px 30px 30px;
+    padding: 3% 40% 3% 40%;
+}
