@@ -1,0 +1,42 @@
+* {
+    color: gray;
+}
+
+p {
+    color: green;
+}
+
+p {
+    color: blueviolet;
+}
+
+/* ^- hace caso al último selector presente en el css */
+
+/*la clase gana al párrafo*/
+.textoazul {
+    color: blue;
+}
+
+/*5. Selector de id*/
+#textomarron {
+    color: brown;
+}
+
+/* 4. Selector de clase más específico */
+p.textorojo {
+    color: red;
+}
+
+/* 6. Selector de ID */
+#textonaranja {
+    color: orange;
+}
+
+/*
+Orden de prioridad:
+id (#)
+p.class
+.class
+p
+*
+*/

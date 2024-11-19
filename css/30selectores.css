@@ -1,0 +1,70 @@
+/*TIPOS DE SELECTORES*/
+/*El asterisco = SELECTOR UNIVERSAL a todo el documento*/
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+/* el SELECTOR DE TIPO se aplica a cada uno de los elementos*/
+  
+  p {
+    color: red;
+    background-color: rgb(185, 172, 223) ;
+  }
+ 
+  h1 {
+    color: yellow;
+  }
+  h2 {
+    color: yellow;
+  }
+  
+/* se pueden agrupar las reglas individuales con un
+SELECTOR MÚLTIPLE, separados por una coma */
+
+  h1, h2 {
+    color: yellow ;
+    font-family: Verdana;
+  }
+  */
+
+  h1,h2 {
+    font-size: 26pt ;
+    color:rgb(131, 100, 159)
+  }
+
+/* se pueden definir dos veces, una para propiedades comunes y otra para
+propiedades específicas */
+
+  h2 {
+    background-color: aquamarine ;
+  }
+
+/* SELECTOR DESCENDIENTE selecciona elementos que se encuentran dentro de otros elementos
+Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de
+apertura y de cierre del otro elemento*/
+  
+  p span {
+    color: blue ;
+  }
+ 
+/*SELECTOR DE CLASE: . se identifica con un punto y se escribe en el documento
+HTML con el atributo class*/
+
+  .colorFondoGris {
+    color:white;
+    background-color: grey;
+  }
+
+  p.tamañoGrande{
+    font-size: 5em;
+  }
+  
+/*SELECTOR DE ID permite seleccionar un elemento de la página. Se identifica
+con una # y se escribe en el documento HTML con el atributo id*/
+
+  #destacado {
+    text-decoration: underline;
+  }
+  
+/* id para estilos a un solo elemento específico y class para varios elementos diferentes
