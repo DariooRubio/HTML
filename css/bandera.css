@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    position: relative;
+    top: 20px;
+    left: 65px;
+    font-size:x-large
+}
+
+#rojoA{
+    margin: 37px;
+    height: 50px;
+    position: relative;
+}
+    #rojo1{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 0px;  
+    }
+    #rojo2{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 50px;  
+    }
+    #rojo3{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 100px;  
+    }
+    #rojo4{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 150px;  
+    }
+    #rojo5{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 200px;  
+    }
+    #rojo6{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 250px;  
+    }
+
+
+#amarilloA{
+    height: 50px;
+    top: 50px;
+    position: relative;
+}
+    #amarillo1{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 0;  
+    }
+    #amarillo2{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 50px;  
+    }
+    #amarillo3{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 100px;  
+    }
+    #amarillo4{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 150px;  
+    }
+    #amarillo5{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 200px;  
+    }
+    #amarillo6{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+
+        position: absolute;
+        left: 250px;  
+    }
+
+
+#amarilloB{
+    height: 50px;
+    top: 50px;
+    position: relative;
+}
+    #amarillo7{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 0px;  
+    }
+    #amarillo8{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 50px;  
+    }
+    #amarillo9{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 100px;  
+    }
+    #amarillo10{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 150px;  
+    }
+    #amarillo11{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 200px;  
+    }
+    #amarillo12{
+        width: 50px;
+        height: 50px;
+        background-color: #FABD00;
+        position: absolute;
+        left: 250px;  
+    }
+
+    
+#rojoB{
+    top: 50px;
+    height: 50px;
+    position: relative;
+}
+    #rojo7{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519; 
+        position: absolute;
+        left: 0px;  
+    }
+    #rojo8{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 50px;  
+    }
+    #rojo9{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 100px;  
+    }
+    #rojo10{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 150px;  
+    }
+    #rojo11{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 200px;  
+    }
+    #rojo12{
+        width: 50px;
+        height: 50px;
+        background-color: #AD1519;
+        position: absolute;
+        left: 250px;  
+    }
+
+img{
+    height: 6em;
+    position: absolute;
+    z-index: 2;
+    right: 0em;
+    left: 0em;
+}
