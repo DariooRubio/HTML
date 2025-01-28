@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial scale=1.0">
+        <title>Operadores</title>
+    </head>
+    <body>
+        <h1>Arimetrica con javascript</h1>
+        <script>
+        let x;
+        let y;
+
+        let entrada = prompt ("Escribe el valor de x: ");
+        x=  Number(entrada);
+
+        entrada = prompt ("Escribe el valor de y: ");
+        y = Number(entrada);
+
+        console.log("valor de x: ", x);
+        console.log("valor de y: ", y);
+        let suma=x+y;
+
+        document.write("la suma de x e y es: " + x+y + "<br>");
+        document.write("la suma de x e y es: ", x+y, "<br>");
+        document.write("la suma de x e y es: ", suma, "<br>");
+        console.log("la suma de x e y es: ", x+y);
+
+        let z = x-y;
+        console.log("La resta es : ", x-y);
+        console.log("La resta es : ", z);
+
+        z = x*y;
+        console.log("la multiplicacion es : ", z)
+
+        z= x/y;
+        console.log("la division es: ", z)
+
+        z= x%y;
+        console.log("el resto de la division es: ", z);
+
+        z=x**y;
+        console.log("el exponente de x elevado a y es   : ", z);
+ 
+        x++;
+        console.log("valor de x en incremento: ", x);
+        y++;
+        console.log("valor de y en incremento: ", y);
+
+        x--;
+        console.log("valor de x en decremento: ", x);   
+        y--;
+        console.log("valor de y en decremento: ", y);
+
+        y--;
+        y--;
+        console.log("valor de y en decremento 2 veces: ", y);
+
+/*
+        let t = x++; //asigna el valor de x a t, después hace x+1
+        console.log ("el valor de t es: ", t, "el valor de x es: ", x);
+*/
+        let u = ++x;// incrementa x y el valor incrememtado lo asigna a u
+        console.log("El valor de u (u=++x) es: ", u, "el valor de x es: ", x)
+
+        </script>
+    </body>
+</html>

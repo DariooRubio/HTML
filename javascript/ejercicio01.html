@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial scale=1.0">
+        <title>Operadores</title>
+    </head>
+    <body>
+        <h1>ejercicio no entregable</h1>
+        <script>
+        //1. Declara tres variables y muéstralos en consola. Nombre, edad, esEstudiante. 
+        let nombre = "Dario";
+        let edad = 18;
+        let esEstudiante = true ;
+
+        console.log("valor de nombre: ", nombre);
+        console.log("valor de edad: ", edad);
+        console.log("valor de Es estudiante: ", esEstudiante);
+
+        </script>
+        <script>
+        //2. Declara dos números (50 y 25) y muestra por consola los valores, la suma, resta, multiplicación, división y el resto de la división
+        let n1 = 50;
+        let n2 = 25;
+
+        console.log("la suma de x + y es ", n1+n2);
+        console.log("la resta de x + y es ", n1-n2);
+        console.log("la multiplicacion de x + y es ", n1*n2);
+        console.log("la division de x + y es ", n1/n2);
+        console.log("la resto de x + y es ", n1%n2);
+        </script>
+
+        <script>
+        //3. Concatena dos cadenas de caracteres: Hola Segismundo
+        let nombree = "Carlos ";
+        let apellido  ="Sobera";
+        console.log(nombree + apellido);
+        </script>
+
+        <script>
+        //4. Crea una variable con un número y muestra por consola el número anterior y el siguiente 
+        let num_ant = prompt("Escribe un número: ")
+        num_ant--;
+        console.log("numero anterior: ", num_ant);   
+        num_ant++;
+        num_ant++;
+        console.log("numero siguiente: ", num_ant);
+
+        </script>
+        <script>
+        //5. Calcula el área de un rectángulo
+
+        let lado1 = 5;
+        let lado2 = 4;
+
+        console.log("el area del rectangulo es: " + lado1*lado2);
+        </script>
+
+        <script>
+        //6. Intercambia los valores de dos variables. Utiliza una variable temporal para guardar el dato
+        let variable1 = prompt("escribe algo para intercambiar");
+        let variable2 = prompt("escribe algo para intercambiar");
+        
+        z = variable1
+        variable1 = variable2
+        variable2 = z
+
+        console.log(variable1, " y ",  variable2);
+        </script>
+        <script>
+        //7. Calcula el promedio de 3 números. Muestra los valores y el resultado por consola
+        let num1 = 8;
+        let num2= 15;
+        let num3 = 66;
+
+        console.log("El promedio de 8, 15 y 66 es: ", num1+num2+num3/3);
+        </script>
+        <script>
+        //8. Convertir grados Celsius en grados Farenheit
+
+        let g_celsius = prompt("Cuantos grados hay?");
+
+        console.log("Pues en grados farenheit son ", g_celsius*9/5+32)
+        </script>
+
+        <script>
+        //9. Convertir horas a segundos
+
+        let hora=prompt("Que hora es (sin segundos):");
+
+        console.log(hora, "horas en segundos son: ", hora*3600);
+
+        </script>
+    </body>
+</html>
