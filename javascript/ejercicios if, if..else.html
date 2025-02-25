@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+</head>
+<body>
+    <script>
+        // Escribe un programa que lea un número 
+        // por pantalla y muestre en la consola si es mayor que 10.
+
+        let num=prompt("es x mayor que 10?");
+        if (num>10) {document.write("Es mayor que 10", "<br>");        
+    }
+    
+        else{
+            document.write("No es mayor que 10", "<br>")
+        }
+    </script>
+    <script>
+       // Con el mismo número anterior, indica si el número es 
+       // positivo o negativo
+
+       let x=prompt("es x mayor que 10?");
+        if (x>0) {document.write("es un numero positivo", "<br>");        
+    }
+    
+        else{
+            if (x<0) {
+                document.write("es un numero negativo", "<br>");
+            }
+        }
+    </script>
+    <script>
+        //Indica si el número está dentro del rango 3 - 7
+
+        let t=prompt("Indica un numero");
+
+        if (t<=7 && t>=3) {
+            document.write("Esta entre el 3 y el 7", "<br>");
+        }
+        else{
+            document.write("No esta entre el 3 y el 7", "<br>")
+        }
+
+    </script>
+    <script> 
+        //Indica si el número está dentro del rango 10-20 o entre el rango 21-30
+        let numero=prompt("ES ESTE");
+
+        if (numero<=20 && numero>=10) {
+            document.write("Está entre el 10 y el 20")
+        }
+        else {
+            if (numero<=30 && numero>=21) {
+                document.write("Está entre el 21 y el 30");
+            }
+            else {
+                document.write("Es superior a 30");
+            }
+        }            
+    </script>
+    <script>
+        /* SIN TERMINAR Crea un programa que lea una calificación (0 a 100) y muestre en la consola la letra equivalente:     
+                A: 90-100
+                B: 80-89
+                C: 70-79
+                D: <70
+        */
+
+        let calificacion=prompt("Pon tu nota del 0 al 100")
+
+        if(calificación=100 && calificacion>=90) {
+            console.log("A");
+        }
+        else{
+            if(calificacion<=89 && calificacion>=80){
+                console.log("B")
+            }
+            else{
+                if(calificacion<=79 && calificacion>=70){
+                    console.log("C")
+                }
+                else {
+                    console.log("<70")
+                }
+            }
+        }
+    
+    
+
+    </script>
+    <script>
+        let i=99;
+        for(i; i<=150; i++){
+            console.log( i);
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        let y=1;
+        for(y; y<=50; y++){
+            document.write( y, "<br>");
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        let b=1;
+        let c=1;
+        for(b; b<=50; b++){
+            b++;
+            b++;
+            b++;
+            b++;
+            document.write( 5,"x", c++, "=", b, "<br>");
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        let p=1;
+        if(p<=20 && p>=1) { 
+            for(p; p<=20; p++){
+            p++;
+            document.write(p, "<br>");
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        let j=1;
+        while (j<=10) {
+            document.write(j,"<br>");
+            j++;
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        let m=0;
+        let acum=0;
+        let h=prompt("Inserta un número");
+        h=Number(h);
+        let q=prompt("Inserta un numero");
+        q=Number(q);
+        while (acum<100) {
+            acum=(acum+h+q);
+        m++;
+        }
+        console.log(h,q,acum,m);
+
+    </script>
+
+
+</body>
+</html>

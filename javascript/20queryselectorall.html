@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de querySelectorAll()</title>
+</head>
+<body>
+    <h1>Ejemplo de querySelectorAll()</h1>
+    <h2>Escogemos todos los elementos con la clase</h2>
+
+    <div id="contenedor" style="border: solid blue 3px">
+        <p class="nombres">Luisa</p>
+        <p class="nombres">María</p>
+        <p class="nombres">Carlos</p>
+        <p class="nombres">Ana</p>
+        <p class="nombres">Luis</p>
+    </div>
+
+    <button onclick="escogeTodos()">Escoge todos los nombres</button>
+    <p id="solucion"></p>
+    <p id="solucion2"></p>
+    <button onclick="cambiaColor()">Cambia los colores y tamaño</button>
+
+    <script>
+
+        function escogeTodos() {
+            
+            let listado = document.querySelectorAll(".nombres");
+            console.log(listado);
+            
+            /* ahora guardamos el contenido en un párrafo, un texto detrás de otro*/
+            let i = 0;
+            let nombres = " ";
+            for (i; i<listado.length; i++) {
+                nombres += listado[i].textContent + ", "; //+= añade el texto uno detrás de otro
+            }
+            document.getElementById("solucion").textContent = nombres;
+
+
+            /*podemos guardar el contenido en un array*/
+            i=0;
+            let nombres2=[];
+            for (i; i<listado.length; i++) {
+                nombres2[i] = listado[i].textContent; //guardamos cada elemento de listado en un elemento del array
+                
+            }
+            console.log(nombres2);
+            document.getElementById("solucion2").textContent = nombres2;
+
+            
+        }
+
+        function cambiaColor() {
+
+            let listado = document.querySelectorAll(".nombres");
+            console.log(listado);
+            
+            let i = 0;
+            for (i; i<listado.length; i++) {
+                listado[i].style.color = "red";
+                listado[i].style.fontSize = "large";
+            }
+
+        }
+    </script>
+</body>
+</html>

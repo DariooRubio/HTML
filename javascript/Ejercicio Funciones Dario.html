@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios funciones</title>
+</head>
+<body>
+    <script>
+/*  Con las funciones setInterval(), clearInterval() y setTimeout() programa una 
+cuenta atrás de 10 segundos y cuando termine que comience un contador
+hasta 12 para mostrar las 12 uvas. */
+
+    let x="10";
+    x=Number(x);
+    let b="1";
+    b=Number(b);
+    setTimeout(a,100);
+        function a(){
+            document.write("CUENTA ATRAS", "<br>")
+        }
+        
+    let intervalo = setInterval(repetir,1000);
+        function repetir(){   
+        document.write(x, "<br>");
+        x--;  
+        if (x<0){
+        clearInterval(intervalo);
+        document.write("EMPIEZAN LAS UVAS", "<br>");
+        }
+    }
+    setTimeout(espera,12000);
+        function espera() {
+            let intervalo2 = setInterval(uvas, 1000)
+                function uvas(){
+                document.write ("Uva número ", b, "<br>");
+                b++;
+                if (b >12){
+                clearInterval(intervalo2);
+                document.write("FELIZ AÑO 2025", "<br>");
+                }
+            }
+        }
+
+    
+    </script>
+</body>
+</html>

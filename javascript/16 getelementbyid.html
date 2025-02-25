@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo getelementbyid</title>
+</head>
+<body>
+    <p id="original">Texto original</p>
+    <p id="nuevo">nuevo texto</p>
+    <button onclick="cambiatexto('hola')">Hola</button>
+    <button onclick="cambiatexto2('adios')">Adios</button>
+    <button onclick="restauraTexto()">Restaurar</button>
+    <button onclick="propioTexto()">Pon tu propio texto</button>
+
+    <script>
+        function cambiatexto(texto){
+            document.getElementById("original").textContent = texto;
+        }
+        function cambiatexto2(texto2){
+            document.getElementById("original").textContent = texto2;
+        }
+/*funciona con el 3er boton*/
+        let textoInicial= document.getElementById("original").textContent;
+
+        function cambiotexto(texto){
+            document.getElementById("original").textContent=texto;
+        }
+
+        function restauraTexto(){
+            document.getElementById("original").textContent=textoInicial;
+        }
+
+        function propioTexto(){
+            let propio=prompt("Qué quieres escribir")
+            document.getElementById("nuevo").textContent=propio;
+        }
+    </script>
+</body>
+</html>

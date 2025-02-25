@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Tecnología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Bienvenido a la Tienda de Tecnología</h1>
+
+    <p class="descripcion">Explora nuestros productos más vendidos:</p>
+
+    <div id="catalogo">
+        <div class="producto">
+            <h3 class="nombre">Laptop Gamer</h3>
+            <p class="precio">Precio: 1500€</p>
+            <p class="info">Potente laptop con tarjeta gráfica dedicada.</p>
+        </div>
+
+        <div class="producto">
+            <h3 class="nombre">Smartphone Pro</h3>
+            <p class="precio">Precio: 999€</p>
+            <p class="info">Teléfono con cámara de última generación.</p>
+        </div>
+
+        <div class="producto">
+            <h3 class="nombre">Auriculares Inalámbricos</h3>
+            <p class="precio">Precio: 199€</p>
+            <p class="info">Sonido envolvente y batería de larga duración.</p>
+        </div>
+    </div>
+
+    <button onclick="cambiarTitulo()">Cambiar Título</button>
+    <button onclick="resaltarProductos()">Resaltar Productos</button>
+    <button onclick="cambiarPrecio()">Cambiar Precio Primer Producto</button>
+    <button onclick="ocultarDescripcion()">Ocultar Descripciones</button>
+
+    <script>
+        let TextoN="Este será el nuevo título";
+        let Descripcion= "La descripcion también cambiará"
+        function cambiarTitulo() {
+            document.getElementById("titulo").textContent = TextoN;
+            document.querySelector(".descripcion").textContent = Descripcion;
+        }
+
+        function resaltarProductos(){
+            let colores = document.querySelectorAll(".nombre");
+            
+            let i = 0;
+            for (i; i<colores.length; i++) {
+                colores[i].style.backgroundColor = "blue";
+                colores[i].style.color = "red";
+            }
+        }
+
+        let Precio= "Precio = 10€"
+        function cambiarPrecio(){
+            document.querySelector(".producto .precio").textContent = Precio;
+        }
+
+        function ocultarDescripcion(){
+            let oculto = document.getElementsByClassName("info"); 
+            debugger;
+            
+            let nombresGuardados = [];
+            for (let i = 0; i < oculto.length; i++) {
+                    nombresGuardados[i] = oculto[i].textContent;
+                    oculto[i].textContent = " ";  
+                }
+            console.log("elementos guardados: ", nombresGuardados)
+            
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+</head>
+<body>
+    funciones en javascript
+    bloque de código diseádo para realizar una tarea especifica
+    se invoca, se introducen parámetros (valores) y devuelve un resultado
+
+    <script>
+        /*
+        let a = prompt("Dame un número:");
+        a=Number(a)
+        let b = prompt("Dame otro número:");
+        b=Number(b)
+
+        let resultado = multiplica(a,b);
+        console.log("Valor de resultado: ", resultado);
+        
+        function multiplica (a,b) {
+            return a*b;
+        }
+
+        resultado = multiplica (9, 2);
+        console.log("Valor de resultado: ", resultado);
+ */
+    </script>
+    <script>
+        let a="2";
+        a=Number(a);
+        let b="8";
+        b=Number(b);
+        let c="3";
+        c=Number(c);
+
+        let guess = compara(a,b,c);
+
+        function compara (a,b,c) {
+            if (a>b && a>c ){
+                document.write("Es A");
+            }
+            else
+                if (b>a && b>c){
+                    document.write("Es B")
+                }
+                else
+                    if(c>a && c>b){
+                        document.write("Es C")  
+                    }
+        }
+// la funcion predefinida Math.max devuelve el numero mayor
+        console.log(Math.max(a,b,c));
+
+        let texto="hola";
+        console.log("El texto", texto, "tiene", texto.length, " caracteres");
+                    
+// la funcion serTimeout permite ejecutar otra funcion una vez pasado un tiempo, entre paréntesis el tiempo de retraso
+        setTimeout(espera,3000);
+        function espera(){
+            console.log ("Esperé 3 segundos para mostrarme")
+        }
+
+//sirve para ejecutar una funcion, se para con clearInterval
+        setInterval(repetir,5000);
+        function repetir(){
+            console.log ("Me repito mas que el ajo")
+        }
+    </script>
+ 
+</body>
+</html>
