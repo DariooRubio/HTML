@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de document.getElementByClass</title>
+</head>
+<body>
+    <h1>Ejemplo de document.getElementByClass("class")</h1>
+    <h2>Escogemos todos los class</h2>
+
+
+    <h2>Lista de nombres</h2>
+
+    <p class="nombres">María</p>
+    <p class="nombres">Ernesto</p>
+    <p class="nombres">Julia</p>
+
+    <button onclick="cambiarNombres()">Cambiar Nombres</button>
+
+    <script>
+        function cambiarNombres() {
+
+            let elementos = document.getElementsByClassName("nombres");  // Obtiene todos los elementos con la clase "nombres"
+
+            console.log("elementos:", elementos);
+            console.log("elementos.lenght:", elementos.length);
+            debugger;
+
+            // Cambia el texto de cada elemento
+            for (let i = 0; i < elementos.length; i++) {
+                elementos[i].textContent = "Nombre cambiado " + (i + 1);  
+            }
+
+
+            //añadir que los nombres se guarden:
+            /*
+            let nombresGuardados = [];
+            for (let i = 0; i < elementos.length; i++) {
+                    nombresGuardados[i] = elementos[i].textContent;
+                    elementos[i].textContent = "Nombre cambiado " + (i + 1);  
+                }
+            console.log("elementos guardados: ", nombresGuardados)
+            */
+        }
+        
+
+    </script>
+
+</body>
+</html>
